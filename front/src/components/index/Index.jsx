@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
 import config from "../../params/config";
 import { CChart } from '@coreui/react-chartjs';
+import './style.css';
 
-export default function Index() 
-{
+export default function Index() {
     const [table, setTable] = useState({
         body: []
     });
@@ -13,13 +13,13 @@ export default function Index()
         indexes: [],
         count: 1
     });
-    const [loading, setLoading] = useState(false);    
+    const [loading, setLoading] = useState(false);
 
     const fetchTable = useCallback(async () => {
         setLoading(true);
         const response = await fetch(config.api + 'get/collection/list/');
         const answer = await response.json();
-        
+
         let labels = [];
         let numbers = [];
         let indexes = [];
@@ -55,14 +55,14 @@ export default function Index()
     }
 
     function getColors(count) {
-        if(count > 0) {
+        if (count > 0) {
             let arColors = [];
-            let arColorCode = ['A', 'B', 'C', 'D', 'E', 'F', '1', '2', '3', '4', '5', '6', '7', '8', '9' ,'0'];
+            let arColorCode = ['A', 'B', 'C', 'D', 'E', 'F', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
             //HEX: RGB, RGBA. 00 00 00 00
 
-            for(let j = 0; j < count; j++) {
+            for (let j = 0; j < count; j++) {
                 let color = '#';
-                for(let i =0; i < 6; i++) {
+                for (let i = 0; i < 6; i++) {
                     color += arColorCode[getRandomInt(16)]
                 }
 
@@ -76,79 +76,21 @@ export default function Index()
 
     return (
         <>
-            <table className="simple-table">
-            <thead>
-                <tr>
-                    <th>Коллекция</th>
-                    <th>Индексы</th>
-                    <th>Кол-во документов</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    !loading && table.body.map(row => (
-                        <tr key={row._id} id={row._id}>
-                            {
-                            Object.values(row).map((col, index) => (
-                               <td key={index}>{col}</td>
-                            ))
-                            }
-                        </tr>
-                    ))
-                }
-            </tbody>
-        </table>
 
-        <div>
-            <h3>Документы:</h3>
-        <CChart
-            type="doughnut"
-            data={{
-                labels: pie.labels,
-                datasets: [
-                {
-                    backgroundColor: getColors(pie.count),
-                    data: pie.numbers,
-                },
-                ],
-            }}
-            options={{
-                plugins: {
-                legend: {
-                    labels: {
-                    //color: getStyle('--cui-body-color'),
-                    }
-                }
-                },
-            }}
-            />
-        </div>
 
-        <div>
-            <h3>Индексы:</h3>
-        <CChart
-            type="doughnut"
-            data={{
-                labels: pie.labels,
-                datasets: [
-                {
-                    backgroundColor: getColors(pie.count),
-                    data: pie.indexes,
-                },
-                ],
-            }}
-            options={{
-                plugins: {
-                legend: {
-                    labels: {
-                    //color: getStyle('--cui-body-color'),
-                    }
-                }
-                },
-            }}
-            />
-        </div>
-        
+            <div className="banner">
+
+                <div className="text">
+                    <div class="tekst_sverhu_kartinki">TRAVEL TIME</div>        
+                    <div class='text_name'>Don't let the loud noise scare you.<br></br>
+                    Let the rhythms of the dance  amuse you.<br></br>
+                    You are given a very rare chance <br></br>
+                    Feel the movement of our ancestors</div></div>
+            </div>
+
+            <link rel="stylesheet" href="style.css" />
+
+
         </>
     )
 }

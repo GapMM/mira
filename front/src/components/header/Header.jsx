@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Logo from '../../images/logo.png';
+import pipa from '../../images/pipa.png';
 import './style.css';
 import Menu from '../menu/Menu';
 import lang from './lang.js';
@@ -28,7 +28,7 @@ export default function Header({ curPath }) {
         <>
         <header>
             <div className='LogoGroup'>
-                <img src={Logo} width="40px" alt="" />
+                <img src={pipa} width="40px" alt="" />
                 <h1>SPA</h1>
             </div>
 
