@@ -11,8 +11,9 @@
 .text{
     display:block;
     color:#fff;
-    top:10%;
+    top:30%;
     position:absolute;
+    left: 20px;
 }
 
 .banner .tekst_sverhu_kartinki {
