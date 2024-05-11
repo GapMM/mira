@@ -36,10 +36,7 @@ export default function Header({ curPath }) {
 
             <div className='timer'>{ now.toLocaleTimeString() }</div>
         </header>
-        <h2>
-            {curPath != "" && lang[curPath]}
-            {curPath === "" && lang.index}
-        </h2>
+
         </>
     )
 }

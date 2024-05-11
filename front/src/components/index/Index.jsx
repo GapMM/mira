@@ -89,6 +89,18 @@ export default function Index() {
             </div>
 
             <link rel="stylesheet" href="style.css" />
+            <div class='box'><a href="test">
+            <img src='https://sportishka.com/uploads/posts/2023-12/1702065997_sportishka-com-p-parizh-eifeleva-bashnya-krasivo-22.jpg'
+            data-text="Paris"/>
+                </a> 
+            
+            </div>
+
+            <div class='box1'><a href='Japan'>
+            <img src='https://i.pinimg.com/originals/36/12/d8/3612d88a202482eff6b3d552d2920654.jpg'
+            data-text="Japan"/>
+            </a>
+            </div>
 
 
         </>
