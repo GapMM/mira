@@ -81,25 +81,35 @@ export default function Index() {
             <div className="banner">
 
                 <div className="text">
-                    <div class="tekst_sverhu_kartinki">TRAVEL TIME</div>        
+                    <div class="tekst_sverhu_kartinki">TRAVEL TIME</div>
                     <div class='text_name'>Don't let the loud noise scare you.<br></br>
-                    Let the rhythms of the dance  amuse you.<br></br>
-                    You are given a very rare chance <br></br>
-                    Feel the movement of our ancestors</div></div>
+                        Let the rhythms of the dance  amuse you.<br></br>
+                        You are given a very rare chance <br></br>
+                        Feel the movement of our ancestors</div></div>
             </div>
 
             <link rel="stylesheet" href="style.css" />
-            <div class='box'><a href="test">
-            <img src='https://sportishka.com/uploads/posts/2023-12/1702065997_sportishka-com-p-parizh-eifeleva-bashnya-krasivo-22.jpg'
-            data-text="Paris"/>
-                </a> 
-            
-            </div>
+            <div className='box'>
+                <div class='box1'>
+                    <a href="test" style={{
+                        backgroundImage: 'url(https://sportishka.com/uploads/posts/2023-12/1702065997_sportishka-com-p-parizh-eifeleva-bashnya-krasivo-22.jpg)'
+                    }}>
+                </a> </div>
 
-            <div class='box1'><a href='Japan'>
-            <img src='https://i.pinimg.com/originals/36/12/d8/3612d88a202482eff6b3d552d2920654.jpg'
-            data-text="Japan"/>
-            </a>
+                <div class='box1'><a href='Japan' style={{
+                    backgroundImage: 'url(https://i.pinimg.com/originals/36/12/d8/3612d88a202482eff6b3d552d2920654.jpg)'
+                }}>
+                </a></div>
+
+                <div class='box1'><a href='' style={{
+                    backgroundImage: 'url(https://i.pinimg.com/originals/db/87/d3/db87d388659ab6ee0b7251e576d6ae4f.jpg)'
+                }}>
+                </a></div>
+
+                <div class='box1'><a href='' style={{
+                    backgroundImage: 'url(https://sportishka.com/uploads/posts/2023-12/1701803231_sportishka-com-p-samie-krasivie-ostrova-pkhuketa-oboi-63.jpg)'
+                }}>
+                </a></div>
             </div>
 
 

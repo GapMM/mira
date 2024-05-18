@@ -6,6 +6,7 @@
     background: url('../../../public/images/banner.jpg') no-repeat center;
     background-size: cover;
     position: relative;
+    filter: brightness(60%)
 }
 
 .text{
@@ -14,6 +15,7 @@
     top:30%;
     position:absolute;
     left: 20px;
+    opacity: 10;
 }
 
 .banner .tekst_sverhu_kartinki {
@@ -28,17 +30,28 @@
 }
 
 .box{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    object-position: 15% 100%;
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    justify-content: center;
+}
+.box .box1{
+    width: 25%;
+    height: 50px;
+    display: block;
+}
+.box .box1 a{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position:relative;
 }
 
-.box1{
-    width: 100px;
-    height: 300px;
-    left:50px;
-    object-fit: cover;
-    object-position: 15% 100%;
-
+.box img {
+    width:10px
 }
+
