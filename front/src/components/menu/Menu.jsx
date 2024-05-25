@@ -15,11 +15,24 @@ export default function Menu({curPath}) {
         () => {fetchMenu()}, [fetchMenu]
     );
 
+    function toBlock(event) {
+        event.preventDefault();
+        let target = event.target;
+        let href = target.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+
+        window.scrollBy({
+            top: scrollTarget.offsetTop,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <menu>   
             {
                 menu && menu.map(menuElement => (
-                    <li className={curPath == menuElement.LINK ? 'selected': null} key={menuElement._id}><a href={menuElement.LINK}>{menuElement.NAME}</a></li>
+                    <li className={curPath == menuElement.LINK ? 'selected': null} key={menuElement._id}><a onClick={toBlock} href={menuElement.LINK}>{menuElement.NAME}</a></li>
                 ))
             }
         </menu>

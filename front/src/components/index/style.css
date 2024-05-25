@@ -1,3 +1,13 @@
+
+
+h1 {
+    color:#fff;
+    text-align: center;
+    margin:auto;
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
 .banner {
     display:block;
     width: 100%;
@@ -6,7 +16,20 @@
     background: url('../../../public/images/banner.jpg') no-repeat center;
     background-size: cover;
     position: relative;
-    filter: brightness(60%)
+    /* filter: brightness(60%) */
+}
+
+.banner:before {
+    content: '';
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.3);
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    margin:auto;
 }
 
 .text{
@@ -15,7 +38,8 @@
     top:30%;
     position:absolute;
     left: 20px;
-    opacity: 10;
+    opacity: .9;
+    z-index: 10;
 }
 
 .banner .tekst_sverhu_kartinki {
@@ -33,17 +57,17 @@
     display: flex;
     gap: 20px;
     width: 90%;
-    height: 100px;
+    height: fit-content;
     margin: auto;
     justify-content: center;
+    color:#fff;
 }
 .box .box1{
     width: 25%;
-    height: 50px;
     display: block;
 }
-.box .box1 a{
-    height: 100%;
+.box .box1 a.preview-picture {
+    height:200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

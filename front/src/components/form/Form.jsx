@@ -24,6 +24,7 @@ export default function Form({nameForm, arValue = {}}) {
 
             async function fetchSchema() {
                 const response = await fetch(config.api + 'get/schema/' + formName + '/');
+                console.log(response);
                 const answer = await response.json();
 
                 for(let key in answer) {

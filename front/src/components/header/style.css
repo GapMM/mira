@@ -4,6 +4,10 @@ header {
     border-bottom: 1px solid #999;
     justify-content: space-between;
     padding:10px 30px;
+    position:fixed;
+    top:0;
+    z-index: 1000;
+    width:calc(-60px + 100%);
 }
 
 header .LogoGroup {
@@ -20,5 +24,5 @@ header .LogoGroup h1 {
 }
 
 header .LogoGroup img {
-    max-height: 40px;
+    
 }

@@ -28,8 +28,7 @@ export default function Header({ curPath }) {
         <>
         <header>
             <div className='LogoGroup'>
-                <img src={pipa} width="40px" alt="" />
-                <h1>SPA</h1>
+                <a href='/'><img src={pipa} width="120px" alt="" /></a>
             </div>
 
             <Menu curPath={curPath} />

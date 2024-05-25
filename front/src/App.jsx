@@ -26,6 +26,10 @@ function App() {
       <Header curPath={currentPath}/>
 
       <Container curPath={currentPath}></Container>
+
+      <footer>
+        Мирослава Гапоненко
+      </footer>
     </div>
   );
 }
