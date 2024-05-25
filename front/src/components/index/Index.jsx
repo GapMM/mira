@@ -111,7 +111,7 @@ export default function Index() {
                                 "url(https://sportishka.com/uploads/posts/2023-12/1702065997_sportishka-com-p-parizh-eifeleva-bashnya-krasivo-22.jpg)",
                         }}
                     ></a>
-                    <h3>Текст</h3>
+                    <h3>Paris</h3>
                 </div>
 
                 <div class="box1">
@@ -122,6 +122,7 @@ export default function Index() {
                                 "url(https://i.pinimg.com/originals/36/12/d8/3612d88a202482eff6b3d552d2920654.jpg)",
                         }}
                     ></a>
+                    <h3>Japan</h3>
                 </div>
 
                 <div class="box1">
@@ -132,6 +133,7 @@ export default function Index() {
                                 "url(https://i.pinimg.com/originals/db/87/d3/db87d388659ab6ee0b7251e576d6ae4f.jpg)",
                         }}
                     ></a>
+                    <h3>Italy</h3>
                 </div>
 
                 <div class="box1">
@@ -142,8 +144,46 @@ export default function Index() {
                                 "url(https://sportishka.com/uploads/posts/2023-12/1701803231_sportishka-com-p-samie-krasivie-ostrova-pkhuketa-oboi-63.jpg)",
                         }}
                     ></a>
+                    <h3>Thailand</h3>
                 </div>
             </div>
+            <div class="form-wrap">
+  <div class="profile">
+    <h1>Регистрация</h1>
+  </div>
+  <form method="post" action="form.php">
+    <div>
+      <label for="name">Имя</label>
+      <input type="text" name="name" required/>
+    </div>
+    <div class="radio">
+      <span>Пол</span>
+      <label>
+        <input type="radio" name="s" value="мужской"/>мужской
+        <div class="radio-control male"></div>
+      </label>
+      <label>
+        <input type="radio" name="s" value="женский"/>женский
+        <div class="radio-control female"></div>
+      </label>
+    </div>
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" required/>
+    </div>
+    <div>
+      <label for="country">Страна</label>
+      <select name="country">
+        <option>Выберите страну проживания</option>
+        <option value="Россия">Россия</option> 
+        <option value="Париж">Париж</option> 
+        <option value="Беларусь">Беларусь</option> 
+      </select> 
+      <div class="select-arrow"></div> 
+    </div> 
+    <button type="submit">Отправить</button> 
+  </form> 
+</div>
         </>
     );
 }
