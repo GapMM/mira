@@ -100,7 +100,7 @@ export default function Index() {
                 </div>
             </div>
 
-            <h1 id='hot'>Популярные туры</h1>
+            <h1 id='hot'>Popular tours</h1>
 
             <div className="box">
                 <div class="box1">
@@ -147,6 +147,9 @@ export default function Index() {
                     <h3>Thailand</h3>
                 </div>
             </div>
+
+        <h1 id='hot'>Registration</h1>
+           
             <div class="signupFrm">
     <form action="" class="form">
       <h1 class="title">Sign up</h1>
