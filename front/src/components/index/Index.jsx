@@ -147,43 +147,34 @@ export default function Index() {
                     <h3>Thailand</h3>
                 </div>
             </div>
-            <div class="form-wrap">
-  <div class="profile">
-    <h1>Регистрация</h1>
+            <div class="signupFrm">
+    <form action="" class="form">
+      <h1 class="title">Sign up</h1>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a"/>
+        <label for="" class="label">Email</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a"/>
+        <label for="" class="label">Username</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a"/>
+        <label for="" class="label">Password</label>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" class="input" placeholder="a"/>
+        <label for="" class="label">Confirm Password</label>
+      </div>
+
+      <input type="submit" class="submitBtn" value="Sign up"/>
+    </form>
   </div>
-  <form method="post" action="form.php">
-    <div>
-      <label for="name">Имя</label>
-      <input type="text" name="name" required/>
-    </div>
-    <div class="radio">
-      <span>Пол</span>
-      <label>
-        <input type="radio" name="s" value="мужской"/>мужской
-        <div class="radio-control male"></div>
-      </label>
-      <label>
-        <input type="radio" name="s" value="женский"/>женский
-        <div class="radio-control female"></div>
-      </label>
-    </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" name="email" required/>
-    </div>
-    <div>
-      <label for="country">Страна</label>
-      <select name="country">
-        <option>Выберите страну проживания</option>
-        <option value="Россия">Россия</option> 
-        <option value="Париж">Париж</option> 
-        <option value="Беларусь">Беларусь</option> 
-      </select> 
-      <div class="select-arrow"></div> 
-    </div> 
-    <button type="submit">Отправить</button> 
-  </form> 
-</div>
+ 
         </>
     );
 }
