@@ -28,7 +28,8 @@ function App() {
       <Container curPath={currentPath}></Container>
 
       <footer>
-        Мирослава Гапоненко
+        Мирослава Гапоненко<br/>
+        © 2024
       </footer>
     </div>
   );

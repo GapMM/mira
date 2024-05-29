@@ -6,6 +6,8 @@ h1 {
     margin:auto;
     font-family: Roboto;
     text-transform: uppercase;
+    width:100%;
+    margin:30px auto;
 }
 
 .banner {
@@ -73,7 +75,13 @@ h1 {
     background-size: cover;
     display: block;
     position:relative;
+    transition: all .2s ease-out;
 }
+
+.box .box1:hover a.preview-picture {
+  scale: 1.1;
+  box-shadow: 0 0 10px rgba(255,255,255, .2)
+} 
 
 .box img {
     width:10px
@@ -92,7 +100,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
+  margin: 50px auto;
 }
 .form {
   background-color: rgb(49, 47, 47);

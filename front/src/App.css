@@ -51,3 +51,9 @@ body {
   gap:15px;
   flex-wrap:wrap;
 }
+
+footer {
+  padding:50px 300px;
+  display:block;
+  color:#fff;
+}
