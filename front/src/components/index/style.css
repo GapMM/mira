@@ -145,7 +145,7 @@ body {
   top: 15px;
   left: 15px;
   padding: 0 4px;
-  background-color: rgb(56, 54, 54);
+  background-color: rgb(49, 47, 47);
   color: #DADCE0;
   font-size: 16px;
   transition: 0.5s;
@@ -185,4 +185,9 @@ body {
   z-index: 10;
   font-size: 14px;
   font-weight: 600;
+}
+
+.about-text {
+  width:60%;
+  text-align: left;
 }

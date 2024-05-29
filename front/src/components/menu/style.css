@@ -3,7 +3,7 @@ menu {
     gap: 5px;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:12px;
+    font-size:14px;
     margin: 10px auto;
     padding:0;
 }
@@ -18,17 +18,18 @@ menu li {
 }
 
 menu li a {
-    color: black;
+    color: #fff;
+    text-decoration:none;
 }
 
-menu li:hover {
-    background-color: #1E88E5;
+menu li:hover a{
+    color: orange
 }
 
 menu li.selected {
-    background: #333;
+    
 }
 
 menu li.selected a {
-    color:#fff;
+    
 }

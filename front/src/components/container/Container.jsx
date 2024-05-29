@@ -34,8 +34,10 @@ export default function Container({ curPath })
         <div className="container">
             {!collectionName && <Index/>}
             {curPath === 'menu' && <>
-                <Form arValue={row} nameForm={collectionName}></Form>
-                <Table onChange={handle} nameTable={collectionName} query={query}></Table>
+                <div className='edit-mode'>
+                <Form arValue={row} nameForm='menu'></Form>
+                <Table onChange={handle} nameTable='menu' query={query}></Table>
+                </div>
             </>}
             {curPath ==='test' && <p>test</p>}
             {curPath ==='Japan' && <p>Japan</p>}

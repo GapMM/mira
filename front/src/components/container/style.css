@@ -2,3 +2,12 @@
     max-width:100%;
     margin:0 auto;
 }
+
+.edit-mode {
+    margin-top:100px;
+    display:flex;
+}
+
+.edit-mode table {
+    background:#fff;
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import pipa from '../../images/pipa.png';
+import pipa from '../../images/logo_remove_bg.png';
 import './style.css';
 import Menu from '../menu/Menu';
 import lang from './lang.js';

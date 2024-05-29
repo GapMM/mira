@@ -21,9 +21,8 @@ export default function Menu({curPath}) {
         let href = target.getAttribute('href').substring(1);
 
         const scrollTarget = document.getElementById(href);
-
-        window.scrollBy({
-            top: scrollTarget.offsetTop,
+        window.scrollTo({
+            top: scrollTarget.offsetTop - 100,
             behavior: 'smooth'
         });
     }

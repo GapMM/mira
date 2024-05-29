@@ -4,6 +4,10 @@
 
 .App {
   text-align: center;
+  background-image: url('./images/Tour-Eiffel.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 800px bottom;
 }
 
 .App-logo {
